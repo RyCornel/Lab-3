@@ -136,3 +136,18 @@ func uniqueString(array: [String]) -> Bool {
 }
 
 uniqueString(array: ["M", "A", "K", "E", "S", "C", "H", "O", "O", "L"])
+
+
+// Question #10
+
+func numbersOfCharachtersInString(string: String) -> Int {
+    let charachterCount = string.components(separatedBy:"o")
+    print(charachterCount.count-1)
+    return charachterCount.count-1
+}
+
+numbersOfCharachtersInString(string: "MakeSchool")
+
+
+// Question #11
+//????????
