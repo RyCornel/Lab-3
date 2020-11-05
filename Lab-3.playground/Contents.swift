@@ -42,3 +42,31 @@ func fibo(n: Int) -> [Int] {
 }
 
 print(fibo(n: 15))
+
+
+// Question #4
+func powerOfTwo(n: Double) -> Double {
+    
+    let result = pow(n, 2)
+    let i = 0 <= n
+    
+    print("\(i) squared = \(result)")
+    return result
+    
+}
+
+powerOfTwo(n: 8)
+
+
+
+// Question #5
+
+func numberOfStudents() -> String {
+    let coursesAndStudents = ["MOB":30, "BEW":40, "FEW":30, "DS":40]
+    for (course, countStudents) in coursesAndStudents {
+      print("There are \(countStudents) students in the \(course) track")
+        break
+    }
+    return numberOfStudents()
+}
+print(numberOfStudents())
