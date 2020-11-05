@@ -100,3 +100,21 @@ func sumOfArray(array: [Int]) -> Int {
 }
 
 sumOfArray(array: [5,5,7,8,3,6,1])
+
+
+// Question #8
+
+func reverseArray(array: [Int]) -> [Int] {
+    
+    // Rotates Array to the Left <-
+    /*
+     let newArray = array
+    newArray.removeFirst()
+    newArray.append(array.first!)
+    print(newArray)
+     */
+    
+    return array.reversed()
+}
+
+print(reverseArray(array: [5,6,7,8]))
