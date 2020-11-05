@@ -90,3 +90,13 @@ print(firstLastSameNumber(number: 7, array:[5, 1, 2, 3, 4]))
 print(firstLastSameNumber(number: 5, array:[5, 6, 1, 2, 5]))
 print(firstLastSameNumber(number: 1, array:[1, 2, 6, 5, 3, 7, 1]))
 
+
+// Question #7
+
+func sumOfArray(array: [Int]) -> Int {
+    let total = array.reduce(0, +)
+    print(total)
+    return total
+}
+
+sumOfArray(array: [5,5,7,8,3,6,1])
