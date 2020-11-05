@@ -61,6 +61,7 @@ powerOfTwo(n: 8)
 
 // Question #5
 
+/*
 func numberOfStudents() -> String {
     let coursesAndStudents = ["MOB":30, "BEW":40, "FEW":30, "DS":40]
     for (course, countStudents) in coursesAndStudents {
@@ -70,3 +71,22 @@ func numberOfStudents() -> String {
     return numberOfStudents()
 }
 print(numberOfStudents())
+*/
+
+// Question #6
+
+func firstLastSameNumber(number: Int, array:[Int]) -> Bool {
+    if array.first == number && array.last == number
+    {
+        return true
+    }
+    else
+    {
+        return false
+    }
+}
+print(firstLastSameNumber(number: 3, array:[1, 2, 5]))
+print(firstLastSameNumber(number: 7, array:[5, 1, 2, 3, 4]))
+print(firstLastSameNumber(number: 5, array:[5, 6, 1, 2, 5]))
+print(firstLastSameNumber(number: 1, array:[1, 2, 6, 5, 3, 7, 1]))
+
