@@ -118,3 +118,21 @@ func reverseArray(array: [Int]) -> [Int] {
 }
 
 print(reverseArray(array: [5,6,7,8]))
+
+
+// Question #9
+
+func uniqueString(array: [String]) -> Bool {
+    let uniqueArray = ["R", "Y", "A", "N"]
+    let unique = Array(Set(array))
+    
+    if uniqueArray.elementsEqual(uniqueArray) {
+        print(true)
+        return true
+    } else {
+        print(false)
+        return false
+    }
+}
+
+uniqueString(array: ["M", "A", "K", "E", "S", "C", "H", "O", "O", "L"])
